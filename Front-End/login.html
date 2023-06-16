@@ -1,0 +1,40 @@
+<!DOCTYPE HTML5>
+<html>
+    <?php
+  session_start();
+  $userid=$_SESSION['UID'];
+?>
+    <title>CSE | login</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="indexstyle2.css">
+    <style>
+        body{
+          background-image: url(umberto-jXd2FSvcRr8-unsplash.jpg);
+        background-size: 100%;
+      } 
+      </style>
+
+   
+    <body> 
+              
+        <div  class="hero">
+            
+            <div class="form-box">
+                <form id="login" class="input-group" action="teest.php" method="post">
+                    <input type="text" class="input-field"  placeholder="User Id" name="user_id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                    <br>
+                    <button type="submit" class="submit-btn" name="submit">Login</button>
+                </form>
+                
+            </div>
+            
+           
+        </div>
+        
+        
+
+        
+    </body>
+</html>
+
