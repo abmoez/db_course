@@ -10,6 +10,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* CSS code for the table */
+    .alumni-table-wrapper {
+      margin-top: 2rem;
+    }
+    
+    .alumni-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #eaeaea;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .alumni-table th,
+    .alumni-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eaeaea;
+    }
+    
+    .alumni-table th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body id="top">
   <header>
@@ -25,14 +51,13 @@
           <nav class="navbar" data-navbar>
             <ul class="navbar-list">
               <li>
-                <a href="#" class="navbar-link">Home</a>
+                <a href="Home.html" class="navbar-link">Home</a>
               </li>
               <li>
                 <a href="about.html" class="navbar-link">About</a>
               </li>
               <li>
                 <a href="achievements.html" class="navbar-link">Achievements</a>
-
               </li>
               <li>
                 <a href="alumni.html" class="navbar-link">Alumni</a>
@@ -49,27 +74,46 @@
       </div>
     </div>
   </header>
+  
   <main>
     <article>
-      <section class="hero">
+      <!-- Alumni page content here -->
+      <section class="alumni">
         <div class="container">
-          <div class="hero-content">
-            <h1 class="h1 hero-title">Department of Computer Engineering <break></break><span>CSE</span></h1>
-            <p class="hero-text">
-              Unlock the Boundless Power of Technology with Computer Engineering!
-            </p>
-            <div class="btn-group">
-              <button class="btn btn-primary">OUR STAFF</button>
-            </div>
+          <h2 class="h2 section-title">ALUMNI</h2>
+          <div class="alumni-table-wrapper">
+            <table class="alumni-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Year of Graduation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ahmed Hesham</td>
+                  <td>ahesham368@gmail.com</td>
+                  <td>2020</td>
+                </tr>
+                <tr>
+                  <td>Abdelmoez Ashraf</td>
+                  <td>ezz@example.com</td>
+                  <td>2021</td>
+                </tr>
+                <tr>
+                  <td>Badawy</td>
+                  <td>badaawy@badawy.com</td>
+                  <td>2019</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpg" alt="nft art">
-          </figure>
         </div>
       </section>
-     
     </article>
   </main>
+  
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -90,7 +134,6 @@
           </ul>
         </div>
         <div class="footer-link-box">
-          <break> </break>
           <ul class="footer-list">
             <li>
               <h3 class="h3 footer-item-title">Contact</h3>
@@ -115,9 +158,11 @@
       </div>
     </div>
   </footer>
+  
   <a href="#top" class="go-top" data-go-top>
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
+  
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
