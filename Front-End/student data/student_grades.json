@@ -1,6 +1,5 @@
 {
     "name": "John Doe",
-    "year": "2023",
     "email": "johndoe@example.com",
     "completedCourses": [
       {
@@ -16,18 +15,22 @@
         "grade": "A-"
       }
     ],
-    "currentGrades": [
+    "achievements": [
       {
-        "subject": "History",
-        "grade": "A"
+        "achievement": "Student of the Year"
       },
       {
-        "subject": "Geography",
-        "grade": "A-"
+        "achievement": "Excellence in Sports"
+      }
+    ],
+    "researches": [
+      {
+        "title": "Exploring Renewable Energy Sources",
+        "year": "2022"
       },
       {
-        "subject": "Physics",
-        "grade": "B+"
+        "title": "Impact of Climate Change on Biodiversity",
+        "year": "2023"
       }
     ]
   }
