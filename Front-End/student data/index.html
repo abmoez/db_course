@@ -32,29 +32,30 @@
     <thead>
       <tr>
         <th>Course</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Courses will be populated dynamically -->
-    </tbody>
-  </table>
-
-  <h2>Current Semester Grades</h2>
-  <table id="currentGradesTable">
-    <thead>
-      <tr>
-        <th>Subject</th>
         <th>Grade</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Grades will be populated dynamically -->
+      <!-- Courses and grades will be populated dynamically -->
+    </tbody>
+  </table>
+
+  <h2>Achievements</h2>
+  <table id="achievementsTable">
+    <thead>
+      <tr>
+        <th>Achievement</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Achievements will be populated dynamically -->
     </tbody>
   </table>
 
   <script>
     // Fetch JSON data
-    fetch('data.json')
+    fetch('student_grades.json')
       .then(response => response.json())
       .then(data => {
         // Populate student information
@@ -66,25 +67,28 @@
         yearCell.textContent = data.year;
         emailCell.textContent = data.email;
 
-        // Populate completed courses
+        // Populate completed courses and grades
         const completedCoursesTable = document.getElementById('completedCoursesTable');
 
         data.completedCourses.forEach(course => {
           const row = document.createElement('tr');
-          row.innerHTML = `<td>${course}</td>`;
+          row.innerHTML = `
+            <td>${course.course}</td>
+            <td>${course.grade}</td>
+          `;
           completedCoursesTable.appendChild(row);
         });
 
-        // Populate current semester grades
-        const currentGradesTable = document.getElementById('currentGradesTable');
+        // Populate achievements
+        const achievementsTable = document.getElementById('achievementsTable');
 
-        data.currentGrades.forEach(grade => {
+        data.achievements.forEach(achievement => {
           const row = document.createElement('tr');
           row.innerHTML = `
-            <td>${grade.subject}</td>
-            <td>${grade.grade}</td>
+            <td>${achievement.achievement}</td>
+            <td>${achievement.year}</td>
           `;
-          currentGradesTable.appendChild(row);
+          achievementsTable.appendChild(row);
         });
       })
       .catch(error => console.error(error));

@@ -1,0 +1,34 @@
+{
+    "name": "John Doe",
+    "year": "2023",
+    "email": "johndoe@example.com",
+    "completedCourses": [
+      {
+        "course": "Math",
+        "grade": "A"
+      },
+      {
+        "course": "Science",
+        "grade": "B+"
+      },
+      {
+        "course": "English",
+        "grade": "A-"
+      }
+    ],
+    "currentGrades": [
+      {
+        "subject": "History",
+        "grade": "A"
+      },
+      {
+        "subject": "Geography",
+        "grade": "A-"
+      },
+      {
+        "subject": "Physics",
+        "grade": "B+"
+      }
+    ]
+  }
+  
