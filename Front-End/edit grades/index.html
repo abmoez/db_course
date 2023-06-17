@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+  <title>CSE-Edit Grades</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<table class="table table-bordered table-striped" id="gradeTable">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" class="checkbox-col"><input class="form-control" type="checkbox" id="select-all" /></th>
+      <th scope="col" class="name-col sortable" data-field="name">Name <span class="sort-arrow"></span></th>
+      <th scope="col" class="grade-col sortable" data-field="grade">Grade <span class="sort-arrow"></span></th>
+      <th scope="col" class="options-col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td class="checkbox-col"><i class="fas fa-trash-alt" id="delete-all-checked-btn"></i></td>
+      <td><input type="text" form="studentForm" id="name-field" name="name" class="form-control" placeholder="Student Name" required /></td>
+      <td class="grade-col"><input type="number" form="studentForm" name="grade" class="form-control" placeholder="Grade" id="grade-field" required />
+        <button type="submit" form="studentForm" class="btn btn-success">+</button></td>
+      <td><span id="average">0</span></td>
+    </tr>
+  </tfoot>
+</table>
+<form id="studentForm"></form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
