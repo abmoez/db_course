@@ -4,14 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSE - HELWAN</title>
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>About - CSE</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .about-container {
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .about-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #000000; /* Set the color to black */
+    }
+    .about-text {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-<body id="top">
+<body>
   <header>
     <div class="container">
       <a href="#" class="logo">
@@ -25,7 +41,7 @@
           <nav class="navbar" data-navbar>
             <ul class="navbar-list">
               <li>
-                <a href="#" class="navbar-link">Home</a>
+                <a href="Home.html" class="navbar-link">Home</a>
               </li>
               <li>
                 <a href="about.html" class="navbar-link">About</a>
@@ -49,27 +65,31 @@
       </div>
     </div>
   </header>
+
   <main>
-    <article>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="h1 hero-title">Department of Computer Engineering <break></break><span>CSE</span></h1>
-            <p class="hero-text">
-              Unlock the Boundless Power of Technology with Computer Engineering!
+    <section class="about-section">
+      <div class="container">
+        <div class="about-container">
+          <h2 class="h2 about-title">About the Department</h2>
+          <div class="about-content">
+            <p class="about-text">
+              The Department of Computer Engineering (CSE) at Helwan University is dedicated to providing students with a comprehensive education in the field of computer engineering. We offer cutting-edge programs that combine theory with practical skills to prepare students for successful careers in this rapidly evolving field.
             </p>
-            <div class="btn-group">
-              <button class="btn btn-primary">OUR STAFF</button>
-            </div>
+            <p class="about-text">
+              Our department is committed to fostering a supportive learning environment where students can develop their technical expertise and problem-solving abilities. Through hands-on projects, research opportunities, and collaborations with industry partners, students gain valuable experience and are prepared to tackle real-world challenges.
+            </p>
+            <p class="about-text">
+              Our esteemed faculty members are experts in their respective fields and are passionate about sharing their knowledge and expertise with students. They provide mentorship, guidance, and opportunities for students to explore their interests and excel in their studies.
+            </p>
+            <p class="about-text">
+              At CSE, we strive to promote innovation, creativity, and leadership in the field of computer engineering. We encourage students to think critically, embrace new technologies, and make a positive impact on society through their work.
+            </p>
           </div>
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpg" alt="nft art">
-          </figure>
         </div>
-      </section>
-     
-    </article>
+      </div>
+    </section>
   </main>
+
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -90,7 +110,6 @@
           </ul>
         </div>
         <div class="footer-link-box">
-          <break> </break>
           <ul class="footer-list">
             <li>
               <h3 class="h3 footer-item-title">Contact</h3>
@@ -115,9 +134,11 @@
       </div>
     </div>
   </footer>
+
   <a href="#top" class="go-top" data-go-top>
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
+
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

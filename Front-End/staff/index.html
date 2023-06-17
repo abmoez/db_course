@@ -9,9 +9,9 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>Research</th>
         <th>Courses Taught</th>
         <th>Email</th>
+        <th>Phone Number</th>
       </tr>
     </thead>
     <tbody>
@@ -31,9 +31,9 @@
           const row = document.createElement('tr');
           row.innerHTML = `
             <td>${professor.name}</td>
-            <td>${professor.research}</td>
             <td>${professor.courses.join(', ')}</td>
             <td>${professor.email}</td>
+            <td>${professor.phone}</td>
           `;
           professorsTable.appendChild(row);
         });
