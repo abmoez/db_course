@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Professors Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <table id="professorsTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Research</th>
+        <th>Courses Taught</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Professor data will be populated dynamically -->
+    </tbody>
+  </table>
+
+  <script>
+    // Fetch JSON data
+    fetch('professors_data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Populate professors table
+        const professorsTable = document.getElementById('professorsTable');
+
+        data.professors.forEach(professor => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${professor.name}</td>
+            <td>${professor.research}</td>
+            <td>${professor.courses.join(', ')}</td>
+            <td>${professor.email}</td>
+          `;
+          professorsTable.appendChild(row);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
